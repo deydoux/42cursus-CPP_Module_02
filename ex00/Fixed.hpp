@@ -8,7 +8,7 @@ private:
 	int _point;
 	static int const _bits;
 public:
-	Fixed(int point = 0);
+	Fixed();
 	Fixed(Fixed const &src);
 	Fixed &operator=(Fixed const &rhs);
 	~Fixed();

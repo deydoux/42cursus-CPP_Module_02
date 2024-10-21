@@ -2,7 +2,7 @@
 
 int const Fixed::_bits = 8;
 
-Fixed::Fixed(int point) : _point(point) {
+Fixed::Fixed() : _point(0) {
 	std::cerr << "Default constructor called" << std::endl;
 }
 
