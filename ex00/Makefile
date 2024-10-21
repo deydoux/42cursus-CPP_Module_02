@@ -1,4 +1,4 @@
-NAME = orthodox_canonical_form
+NAME = ex00
 
 SOURCES = \
 Fixed.cpp \
