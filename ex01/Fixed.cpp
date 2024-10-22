@@ -12,9 +12,9 @@ Fixed::Fixed(float const n) : _raw(roundf(n * (1 << _bits))) {
 	std::cerr << "Float constructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed const &src) {
+Fixed::Fixed(Fixed const &other) {
 	std::cerr << "Copy constructor called" << std::endl;
-	*this = src;
+	*this = other;
 }
 
 Fixed &Fixed::operator=(Fixed const &rhs) {

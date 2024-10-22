@@ -4,9 +4,9 @@ Fixed::Fixed() : _raw(0) {
 	std::cerr << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed const &src) {
+Fixed::Fixed(Fixed const &other) {
 	std::cerr << "Copy constructor called" << std::endl;
-	*this = src;
+	*this = other;
 }
 
 Fixed &Fixed::operator=(Fixed const &rhs) {

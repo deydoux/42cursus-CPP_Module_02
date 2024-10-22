@@ -12,7 +12,7 @@ public:
 	Fixed();
 	Fixed(int const n);
 	Fixed(float const n);
-	Fixed(Fixed const &src);
+	Fixed(Fixed const &other);
 	Fixed &operator=(Fixed const &rhs);
 	~Fixed();
 	int getRawBits() const;
