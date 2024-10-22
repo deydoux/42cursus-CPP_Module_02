@@ -16,5 +16,4 @@ public:
 	void setRawBits(int const raw);
 };
 
-
 #endif
