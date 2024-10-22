@@ -1,6 +1,7 @@
 NAME = bsp
 
 SOURCES = \
+bsp.cpp \
 Fixed.cpp \
 main.cpp \
 Point.cpp \
