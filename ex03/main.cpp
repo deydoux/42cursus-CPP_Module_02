@@ -6,7 +6,7 @@ bool bsp(Point const a, Point const b, Point const c, Point const point);
 int main() {
 	Point a(0, 0);
 	Point b(4, 0);
-	Point c(2, 4);
+	Point c(2.5, 4);
 
 	Point d(2, 2);
 	Point e(3.5, 2);
