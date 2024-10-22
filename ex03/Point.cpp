@@ -20,3 +20,11 @@ Point &Point::operator=(Point const &) {
 Point::~Point() {
 	std::cerr << "Point destructor called" << std::endl;
 }
+
+Fixed const Point::getX() const {
+	return (_x);
+}
+
+Fixed const Point::getY() const {
+	return (_y);
+}
