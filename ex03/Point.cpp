@@ -4,11 +4,11 @@ Point::Point() {
 	std::cerr << "Default Point constructor called" << std::endl;
 }
 
-Point::Point(float const x, float const y) : _x(x), _y(y) {
+Point::Point(float const x, float const y): _x(x), _y(y) {
 	std::cerr << "(" << x << "," << y << ") Point constructor called" << std::endl;
 }
 
-Point::Point(Point const &other) : _x(other._x), _y(other._y) {
+Point::Point(Point const &other): _x(other._x), _y(other._y) {
 	std::cerr << "Copy Point constructor called" << std::endl;
 }
 

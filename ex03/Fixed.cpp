@@ -1,14 +1,14 @@
 #include "Fixed.hpp"
 
-Fixed::Fixed() : _raw(0) {
+Fixed::Fixed(): _raw(0) {
 	std::cerr << "Default Fixed constructor called" << std::endl;
 }
 
-Fixed::Fixed(int const n) : _raw(n << _bits) {
+Fixed::Fixed(int const n): _raw(n << _bits) {
 	std::cerr << "Int Fixed constructor called" << std::endl;
 }
 
-Fixed::Fixed(float const n) : _raw(roundf(n * (1 << _bits))) {
+Fixed::Fixed(float const n): _raw(roundf(n * (1 << _bits))) {
 	std::cerr << "Float Fixed constructor called" << std::endl;
 }
 

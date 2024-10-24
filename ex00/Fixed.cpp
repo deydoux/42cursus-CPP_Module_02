@@ -1,6 +1,6 @@
 #include "Fixed.hpp"
 
-Fixed::Fixed() : _raw(0) {
+Fixed::Fixed(): _raw(0) {
 	std::cerr << "Default constructor called" << std::endl;
 }
 
