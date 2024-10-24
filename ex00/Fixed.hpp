@@ -6,14 +6,14 @@
 class Fixed {
 private:
 	int _raw;
-	static int const _bits = 8;
+	static const int _bits = 8;
 public:
 	Fixed();
-	Fixed(Fixed const &other);
-	Fixed &operator=(Fixed const &rhs);
+	Fixed(const Fixed &other);
+	Fixed &operator=(const Fixed &rhs);
 	~Fixed();
 	int getRawBits() const;
-	void setRawBits(int const raw);
+	void setRawBits(const int raw);
 };
 
 #endif

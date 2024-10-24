@@ -7,20 +7,20 @@
 class Fixed {
 private:
 	int _raw;
-	static int const _bits = 8;
+	static const int _bits = 8;
 public:
 	Fixed();
-	Fixed(int const n);
-	Fixed(float const n);
-	Fixed(Fixed const &other);
-	Fixed &operator=(Fixed const &rhs);
+	Fixed(const int n);
+	Fixed(const float n);
+	Fixed(const Fixed &other);
+	Fixed &operator=(const Fixed &rhs);
 	~Fixed();
 	int getRawBits() const;
-	void setRawBits(int const raw);
+	void setRawBits(const int raw);
 	float toFloat() const;
 	int toInt() const;
 };
 
-std::ostream &operator<<(std::ostream &os, Fixed const &fixed);
+std::ostream &operator<<(std::ostream &os, const Fixed &fixed);
 
 #endif

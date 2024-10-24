@@ -1,10 +1,10 @@
 #include "Point.hpp"
 
-static Fixed vectorProduct(Point const &point, Point const &a, Point const &b) {
+static Fixed vectorProduct(const Point &point, const Point &a, const Point &b) {
 	return ((a.getX() - point.getX()) * (b.getY() - point.getY()) - (a.getY() - point.getY()) * (b.getX() - point.getX()));
 }
 
-bool bsp(Point const a, Point const b, Point const c, Point const point)
+bool bsp(const Point a, const Point b, const Point c, const Point point)
 {
 	Fixed d1 = vectorProduct(point, a, b);
 	Fixed d2 = vectorProduct(point, b, c);
